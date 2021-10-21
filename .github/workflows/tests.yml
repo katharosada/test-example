@@ -1,8 +1,9 @@
-name: Run Jest Tests
+name: Run Tests
 on: [pull_request]
 jobs:
-  Explore-GitHub-Actions:
+  Jest-Tests:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: npm install
-      - run: jest
+      - run: npm test
