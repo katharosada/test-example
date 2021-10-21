@@ -14,7 +14,7 @@ function mostCommonWord(words) {
         if (counts[word] === maxCount) {
             maxWord.push(word)
         }
-        if (counts[word] > maxCount) {
+        if (counts[word] < maxCount) {
             maxCount = counts[word]
             maxWord = [word]
         }
