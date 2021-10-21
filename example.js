@@ -1,7 +1,7 @@
 
 
 function myFunc() {
-    return "hello"
+    return "hello there"
 }
 
 module.exports = myFunc
