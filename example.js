@@ -8,12 +8,15 @@ function mostCommonWord(words) {
             counts[word] = 1
         }
     })
-    let maxWord = '';
+    let maxWord = [];
     let maxCount = 0
     for (let word in counts) {
+        if (counts[word] === maxCount) {
+            maxWord.push(word)
+        }
         if (counts[word] > maxCount) {
             maxCount = counts[word]
-            maxWord = word
+            maxWord = [word]
         }
     }
     return maxWord
