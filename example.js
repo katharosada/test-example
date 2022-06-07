@@ -11,7 +11,7 @@ function mostCommonWord(words) {
     let maxWord = '';
     let maxCount = 0
     for (let word in counts) {
-        if (counts[word] > maxCount) {
+        if (counts[word] < maxCount) {
             maxCount = counts[word]
             maxWord = word
         }
